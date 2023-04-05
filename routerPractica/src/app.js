@@ -29,4 +29,5 @@ app.delete("/api/user/:name", (req, res) => {
     let newUsers = users.filter(user => user.firstName !== name)
 
     res.send({status:"success", newUsers})
+    
 })
