@@ -18,6 +18,8 @@ void (async () => {
     app.use(express.urlencoded({ extended: true }));
     app.use(express.static(resolve('src/public')));
 
+    console.log(resolve('src/public'))
+
     const viewsPath = resolve('src/views');
 
     app.engine('handlebars', engine({
